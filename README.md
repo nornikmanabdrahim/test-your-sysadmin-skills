@@ -5523,7 +5523,31 @@ Useful resources:
 <details>
 <summary><b>You're on a security conference. Members debating about putting up the OpenBSD firewall on the core of the network. Go to the podium and express your opinion about this solution. What are the pros/cons and why? ***</b></summary><br>
 
-To be completed.
+Ladies and gentlemen,
+
+Thank you for the opportunity to speak with you today about the pros and cons of putting up an OpenBSD firewall on the core of the network.
+
+Pros:
+
+**Security**: OpenBSD is known for its security and stability. It is regularly audited by security experts, and it has a long track record of being free from vulnerabilities.
+
+**Performance**: OpenBSD is very efficient, and it can handle high volumes of traffic without sacrificing performance.
+
+**Flexibility**: OpenBSD's firewall, PF, is very flexible and can be configured to meet the specific needs of any network. It supports a wide range of features, including packet filtering, stateful inspection, and intrusion detection.
+
+**Community support**: OpenBSD has a large and active community of users and developers. This means that there is a wealth of support available if you need help with your firewall or other OpenBSD-related issues.
+
+Cons:
+
+**Complexity**: OpenBSD is not the easiest operating system to learn or use. This is especially true for the firewall, which can be complex to configure.
+Lack of commercial support: OpenBSD is a free and open-source operating system, so there is no commercial support available. This means that you will need to rely on the community for help if you encounter problems.
+
+**Performance overhead**: While OpenBSD is generally very efficient, there is some performance overhead associated with using a firewall. This overhead is typically negligible, but it is something to be aware of, especially if you are running a high-performance network.
+Overall, I believe that the pros of using OpenBSD as a firewall outweigh the cons. It is a very secure, reliable, and flexible firewall solution. However, it is important to be aware of the complexity of OpenBSD and the lack of commercial support before making a decision.
+
+In the case of putting an OpenBSD firewall on the core of the network, there are a few additional things to consider. First, it is important to make sure that the firewall is properly configured and managed. This is a critical task, and it should only be entrusted to experienced and qualified personnel. Second, it is important to have a plan in place for dealing with firewall failures. A firewall is a critical piece of network infrastructure, and it is important to be able to quickly and effectively recover from a failure.
+
+I believe that using OpenBSD as a firewall on the core of the network can be a very good solution. However, it is important to carefully consider the pros and cons before making a decision.
 
 </details>
 
