@@ -5851,7 +5851,52 @@ Useful resources:
 <details>
 <summary><b>You have a lot of sockets, hanging in <code>TIME_WAIT</code>. Your http service behind proxy serve a lot of small http requests. How to check and reduce <code>TIME_WAIT</code> sockets? ***</b></summary><br>
 
-To be completed.
+Here are ways to check and reduce TIME_WAIT sockets:
+
+Check TIME_WAIT sockets
+To check the number of TIME_WAIT sockets, we can use the following command:
+
+```bash
+netstat -an | grep TIME_WAIT | wc -l
+```
+
+This will output the number of sockets in the TIME_WAIT state.
+
+We can also use the following command to see more details about TIME_WAIT sockets:
+
+```bash
+netstat -an | grep TIME_WAIT
+```
+
+This will output a list of all sockets in the TIME_WAIT state, including the local and remote addresses, ports, and state.
+
+Reduce TIME_WAIT sockets
+There are a few things you can do to reduce the number of TIME_WAIT sockets:
+
+Reduce the TCP linger time. The TCP linger time is the amount of time that a socket remains in the TIME_WAIT state after it has been closed. We can reduce the linger time to reduce the number of TIME_WAIT sockets.
+
+To reduce the linger time, We can set the net.linger.time kernel parameter. For example, to set the linger time to 10 seconds, we would use the following command:
+
+```bash
+sysctl net.linger.time=10
+```
+
+Use a proxy server. A proxy server can help to reduce the number of TIME_WAIT sockets by caching connections and reusing them for subsequent requests.
+
+Use a load balancer. A load balancer can help to distribute traffic across multiple servers, which can also help to reduce the number of TIME_WAIT sockets on each server.
+
+Specific to HTTP service behind proxy serving a lot of small HTTP requests
+If we are serving a lot of small HTTP requests behind a proxy server, we may be able to reduce the number of TIME_WAIT sockets by using a reverse proxy server. A reverse proxy server is a type of proxy server that sits in front of our web servers and handles all incoming requests.
+
+Reverse proxy servers can be configured to cache connections and reuse them for subsequent requests. This can help to reduce the number of TIME_WAIT sockets on our web servers.
+
+Additional tips
+Keep software up to date. Software updates often include security patches and bug fixes that can also improve the performance and reliability of the system.
+
+Monitor system performance. By monitoring the system performance, we can identify any potential problems, such as a high number of TIME_WAIT sockets, early.
+
+Have a rollback plan. In case we make a change to the system that causes problems, it is important to have a rollback plan in place so that we can quickly revert to the previous state of your system.
+
 
 Useful resources:
 
