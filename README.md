@@ -5209,8 +5209,11 @@ The OWASP Application Security Verification Standard (ASVS) is an open standard 
 The ASVS is divided into four levels of security verification:
 
 **Level 1: Basic** - This level covers the most fundamental security controls, such as input validation, session management, and error handling.
+
 **Level 2: Standard** - This level includes all of the controls in Level 1, plus additional controls for more complex security threats, such as cryptography and authentication.
+
 **Level 3: Advanced** - This level includes all of the controls in Level 2, plus controls for specific technologies and architectures, such as mobile applications and cloud computing.
+
 **Level 4: Custom** - This level is for organizations that need to implement additional controls beyond those defined in the ASVS.
 The ASVS can be used by organizations of all sizes to improve the security of their web applications and web services. It is also used by security professionals to conduct security assessments and penetration tests.
 
